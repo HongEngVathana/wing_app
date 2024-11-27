@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family: ; */
+}
+:root{
+    --hearder:#a9cf38;
+    --btn:#07f;
+    --btn-hover:rgb(5, 44, 201);
+    --text-white: white;
+    --btn-search: white;
+    --fontsize-content:16px;
+    --font-icon:14px;
+    --text-black: black;
+}
+/* ------------- header-top-wing--------------------------*/
+.header-top-wing{
+    background-color: var(--hearder) !important;
+    color: var(--text-white) !important;
+    height: 60px;
+}
+.header-top-wing .flag{
+    padding: 2px 5px;
+    border-radius: 3px;
+    background-color: white;
+}
+.header-top-wing .flag img{
+    width: 20px !important;
+    
+}
+
+.header-top-wing .flag span{
+    color: var(--text-black);
+    
+}
+
+.header-top-wing .navbar-light{
+    margin-right: 100px !important;
+}
+.header-top-wing .btn-search{
+    background-color: var(--btn-search);
+    color: var(--text-black);
+    
+}
+    
+.header-top-wing .btn-inter {
+    background-color: var(--btn);
+    color: var(--text-white) !important;
+}
+.header-top-wing .btn-inter:hover {
+    background-color: var(--btn-hover);
+}
+.header-top-wing .nav-link{
+    color: var(--text-white);
+}
+.header-top-wing .nav-link:hover{
+    color: var(--text-white);
+}
+/* ------------- search-------------- */
+.header-top-wing .input-search{
+    height: 32px ;
+}
+ .navbar-brand img{
+    width: 170px !important;
+    height: 70px !important;
+}
+.navbar-tab .navbar-style{
+    width: 900px !important;
+     margin-left: 80px;
+}
+.navbar-tab .navbar-style .nav-link{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.dropdown-menu{
+    width: 100% !important;
+}
+/* ------------------------- footer --------------- */
+footer{
+    background-color: var(--hearder);
+    height: 320px;
+}
+footer .navbar-style{
+    width: 900px;
+    margin-left: 80px !important;
+}
+footer .navbar-style a .icon {
+    width: 28px !important;
+    height: 28px !important;
+    background-color: var(--btn);
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    align-items: center;
+}
+
+footer .navbar-style a .icon:hover {
+    background-color: var(--btn-hover);
+    transform: scale(1.1);
+}
+
+footer .navbar-style i{
+   color: var(--text-white) !important;
+   text-align: center;
+    align-items: center;
+    font-size: var(--font-icon) !important;
+}
+footer .navbar-style p{
+    text-align: center;
+    white-space: 0px !important;
+}
+footer .content{
+    font-size: var(--fontsize-content);
+}
+footer hr{
+    color: white;
+}
