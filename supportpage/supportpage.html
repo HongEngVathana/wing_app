@@ -1,182 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="/css/style.css" />
-      <style>
-        /* General Styles */
-        body {
-        font-family: "Arial", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-      }
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+         />
+      <link rel="stylesheet" href="/css/support.css">
 
-      main {
-        padding: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      /* Section Styles */
-      section {
-        background-color: white;
-        margin-bottom: 20px;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      h2 {
-        color: #0073e6;
-        margin-bottom: 15px;
-      }
-
-      p,
-      ul,
-      ol,
-      li {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #333;
-      }
-
-      /* Two-Column Layout for Larger Screens */
-      .content-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-
-      .content-row > div {
-        flex: 1;
-        min-width: 280px;
-      }
-
-      .content-img {
-        max-width: 100%;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        main {
-          padding: 15px;
-        }
-        h2 {
-          font-size: 22px;
-        }
-        p,
-        li {
-          font-size: 14px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        main {
-          padding: 10px;
-        }
-        h2 {
-          font-size: 20px;
-        }
-        p,
-        li {
-          font-size: 12px;
-        }
-      }
-
-      /* Contact Section Styling */
-      .contact-list {
-        list-style-type: none;
-        padding: 0;
-      }
-
-      .contact-list li {
-        margin-bottom: 10px;
-        font-size: 16px;
-      }
-
-      .contact-item {
-        display: flex;
-        align-items: center;
-      }
-
-      .contact-item img {
-        width: 24px;
-        height: 24px;
-        margin-right: 10px;
-      }
-    </style>
-  </head>
-
-  <body>
+      <link rel="stylesheet" href="/css/style.css" />
+   </head>
+   <body>
     <header>
-      <!-- ---------------- header-top-wing --------------------->
 
+      <!-- ---------------- header-top-wing --------------------->
+       
       <div class="header-top-wing">
-        <nav class="navbar navbar-expand-lg w-50 navbar-light float-end">
+        <nav class="navbar navbar-expand-lg w-50 navbar-dark float-end ">
           <div class="container">
             <div class="navbar-style">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div
-                class="collapse navbar-collapse"
-                id="navbarSupportedContent me-3"
-              >
+              <div class="collapse navbar-collapse " id="navbarSupportedContent me-3">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">News</a>
+                    <a class="nav-link " aria-current="page" href="#">News</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Promotions </a>
+                    <a class="nav-link" href="#">Promotions
+  
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Careers </a>
+                    <a class="nav-link" href="#">Careers
+  
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">About </a>
+                    <a class="nav-link" href="#">About
+  
+                    </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link me-4" href="#">CSR </a>
+                    <a class="nav-link me-4" href="#">CSR
+  
+                    </a>
                   </li>
                   <li class="nav-item me-2">
-                    <button class="btn btn-search btn-sm mt-2" type="submit">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
+                    <button class="btn btn-search btn-sm mt-2" type="submit"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item ">
                     <a class="nav-link active" href="#">
-                      <div class="">
-                        <img style="border-radius: 5px;" src="/img/header/flag.png" alt="Cambodian flag" />
-                        <!-- <span>ខ្មែរ</span> -->
+                      <div class="flag">
+                        <img src="/img/header/flag.png" alt="Cambodian flag"> <span>ខ្មែរ</span>
                       </div>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <button class="btn btn-inter btn-sm mt-2" type="submit">
-                      Internet Banking
-                    </button>
+                    <button class="btn btn-inter btn-sm mt-2" type="submit">Internet Banking</button>
                   </li>
                 </ul>
               </div>
@@ -186,154 +78,91 @@
       </div>
       <!-- ---------------navbar ------------->
       <nav
-        class="navbar navbar-tab w-100 ps-5 pe-5 float-end navbar-expand-lg navbar-light bg-light d-flex justify-content-between"
-      >
+        class="navbar navbar-tab w-100 ps-5 pe-5 float-end navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
         <div class="container">
-          <div class="d-flex justify-content-center navbar-style w-100">
+          <div class="d-flex justify-content-center navbar-style  w-100">
             <a class="navbar-brand w-75" href="#">
-              <img src="/img/header/cropped-wb-logo-head.png" alt="" />
+              <img src="/img/header/cropped-wb-logo-head.png" alt="">
             </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div
-              class="collapse navbar-collapse w-50"
-              id="navbarSupportedContent"
-            >
+  
+            <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Personal
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Personal 
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <hr class="dropdown-divider">
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
-
+  
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Business
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <hr class="dropdown-divider">
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Wing Bank App
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <hr class="dropdown-divider">
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
-
+  
                 <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Self Services
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <hr class="dropdown-divider">
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
-
+  
                 <li class="nav-item dropdown w-100">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Support
                   </a>
-                  <ul
-                    class="dropdown-menu w-100"
-                    aria-labelledby="navbarDropdown"
-                  >
+                  <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <hr class="dropdown-divider">
                     </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                   </ul>
                 </li>
               </ul>
@@ -341,273 +170,145 @@
           </div>
         </div>
       </nav>
+  
     </header>
-
-    <!-- Content -->
-       <section id="main-wrapper">
-        <div class="popup-wrap">
-            <div class="popup-content">
-                <a href="#" class="close-video"><img  width="25" alt="close" data-src="https://www.wingbank.com.kh/wp-content/themes/wing/assets/images/close.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="https://www.wingbank.com.kh/wp-content/themes/wing/assets/images/close.png" width="25" alt="close"></noscript></a>
-                <div class="video-youtube"></div>
-            </div>
-        </div>
-    <section id="main-wrapper">
-        <div class="banner-inner">
-
-        <!-- <div class="coverimage" style="background: url('https://www.wingbank.com.kh/wp-content/uploads/2023/05/Cover-Complaint.png') no-repeat bottom right; background-size: cover;"></div> -->
-        <div class="coverimage">
-    <img data-src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/Cover-Complaint.png" class="coverimage-desk lazyload" src="https://www.wingbank.com.kh/wp-content/themes/wing/assets/images/lazyload.png" />
-    </div>
-    <div class="table-wrap">
-        <div class="table-cell">
-            <div class="container">
-                <div class="inner-banner-text text-left">
-                    <h1><h1 style="color: #A9CB37 !important; font-weight: 400;"><strong>Your Complaint​ Resolution Help Us Improve</strong></h1></h1>
-<!--                    <a href="#" class="play-btn">WATCH THE VIDEO <span class="play-icon"></span></a>-->
-                                        <p><p style="color: #6D6E71">Not​ fully​ satisfied​ with​ the​ service​ received​ or became a witness of an action that you think would violate laws and regulations?​ We​ are​ here​ to​ help.</p></p>
-                                    </div>
-            </div>
-        </div>
-    </div>
-</div>
-			<div class="responsive-none">
-				<div class="container position-relative"><ul class="wpb_page_list page-sidebar"><li class="page_item page-item-42852"><a href="https://www.wingbank.com.kh/en/support/contact-center/">Contact Center</a></li>
-<li class="page_item page-item-52164"><a href="https://www.wingbank.com.kh/en/support/wing-chat/">Wing Chat</a></li>
-<li class="page_item page-item-42863"><a href="https://www.wingbank.com.kh/en/support/feedback/">Feedback</a></li>
-<li class="page_item page-item-42866 current_page_item"><a href="https://www.wingbank.com.kh/en/support/complaint/" aria-current="page">Complaint</a></li>
-<li class="page_item page-item-52783"><a href="https://www.wingbank.com.kh/en/support/card-security-awareness/">Card Security Awareness</a></li>
-</ul></div>			</div>
-		<section id="section-0" class="sec-pad "><div class="layout-1 " ><div class="container "><div class="row"><div class="col-sm-12 text-left"><style>
-
-    .title {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px !important;
-        line-height: 66px;
-        /* Primary */
-        color: #A9CB37 !important;
-    }
-
-    .items-list {
-        display: flex;
-        gap: 12px;
-        padding-bottom: 14px;
-    }
-
-    .items-list img {
-        object-fit: contain;
-    }
-
-    .items-list p {
-        text-decoration: none;
-        font-weight: bold;
-        color: #0077FF;
-        padding: 0;
-    }
-
-    .background-card {
-        border-radius: 0.5rem;
-        background-color: #f2f2f3;
-        flex-direction: column;
-        padding: 1rem 2rem;
-        align-items: self-start !important;
-        gap: 3.13rem;
-    }
-
-    .sub-background-card {
-        border-radius: 0.5rem;
-        background-color: #fff;
-        flex-direction: column;
-        padding: 1.5rem;
-        align-items: self-start !important;
-        gap: 3.13rem;
-        margin-bottom: 3.13rem;
-    }
-
-    @media screen and (max-width: 782px) {
-        .intro-card {
-            border-radius: 0.5rem;
-        }
-
-        .background-card {
-            border-radius: 0.5rem;
-            padding: 1rem;
-        }
-
-        .banner-inner .table-wrap:before {
-            background: #fff !important;
-        }
-
-        .title {
-            font-size: 28px !important;
-        }
-    }
-</style>
-<div class="background-card">
-    <h1 class="title">Complaint​ Resolution</h1>
-    <div class="sub-background-card">
-        <h3>Step 1</h3>
-        <h4>Contact Customer Service</h4>
-        <p style="color: #6d6e71;">If we didn't meet your expectations while serving you, please speak to our Customer
-            Service Specialist through one of the following​ channels:</p>
-        <div>
-            <div class="items-list"><img
- data-src='https://www.wingbank.com.kh/wp-content/uploads/2023/05/call-calling.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' /><noscript><img
-                    src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/call-calling.png" /></noscript>
-                <p>Call​ our​ hotline​ numbers: <a href="tel:+855 23 999 989">+855 23 999 989</a></p>
-            </div>
-            <div class="items-list"><img data-src='https://www.wingbank.com.kh/wp-content/uploads/2023/05/sms.png' class='lazyload' src='data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' /><noscript><img src="https://www.wingbank.com.kh/wp-content/uploads/2023/05/sms.png" /></noscript>
-                <p>Chat​ with​ us​ on​ our​ <a href="https://www.facebook.com/WingBankKH" target="_blank"
-                        rel="noopener">Facebook page;</a></p>
-            </div>
-        </div>
-        <p>Very​ often,​ the​ issue​ will​ be​ resolved​ quickly​ in​ Step​ 1.</p>
-        <p>If​ you​ are​ still​ dissatisfied,​ please​ proceed​ to​ Step​ 2.</p>
-    </div>
-    <div class="sub-background-card">
-        <h3>Step 2</h3>
-        <h4>Lodge​ a​ formal​ complaint</h4>
-        <p style="color: #6d6e71;">If​ your​ complaint​ has​ not​ been​ resolved​ by​ our​ Customer​ Service​
-            Specialist,​ you​ can​ submit formal​ complaint​ to​ the​ Complaint​ and​ Dispute​ Resolution​ Unit.</p>
-        <div class="items-list">
-            <p>Please​ complete​ the​ <a href="https://www.wingbank.com.kh/km/complaint-form/">Complaint​
-                    Acknowledgement​ </a> Form and​ click​ Submit.​ Specialists​ from the​ Unit​ will​ be​ contacting​
-                you​ shortly.</p>
-        </div>
-    </div>
-    <div>
-        <h3>Complaint​ and​ Dispute​ Resolution​ Unit:​ an​ independent​ and​ impartial team</h3>
-        <p style="color: #6d6e71;">In​ the​ situation​ where​ a​ formal​ complaint​ has​ been​ lodged​ to​ the​
-            Complaint​ and​ Dispute​ Resolution Unit,​ the​ case​ will​ be​ then​ managed​ by​ the​ Unit​ that​ offers​
-            a​ fair,​ impartial,​ and​ objective​ investigation of​ all​ complaints.​ When​ the​ Unit​ reviews​ a​
-            formal​ complaint​ about​ the​ Bank’s​ products​ and​ services,​ it will​ base​ on:</p>
-        <ul>
-            <li>Laws​ and​ regulations;​ and</li>
-            <li>Sound​ industry​ practices.</li>
-        </ul>
-    </div>
-    <div>
-        <h3>The​ 2-stage​ Resolution​ Process</h3>
-        <h4>The​ official​ investigation​ of​ a​ formal​ complaint​ will​ be​ based​ on​ the​ 2-stage​ Resolution​
-            Process:</h4>
-        <p style="color: #6d6e71;">In​ the​ situation​ where​ a​ formal​ complaint​ has​ been​ lodged​ to​ the​
-            Complaint​ and​ Dispute​ Resolution Unit,​ the​ case​ will​ be​ then​ managed​ by​ the​ Unit​ that​ offers​
-            a​ fair,​ impartial,​ and​ objective​ investigation of​ all​ complaints.​ When​ the​ Unit​ reviews​ a​
-            formal​ complaint​ about​ the​ Bank’s​ products​ and​ services,​ it will​ base​ on:</p>
-        <div class="sub-background-card">
-            <div>
-                <h5>First-stage resolution</h5>
-                <ul>
-                    <li>The​ Unit​ to​ conduct​ fact​ findings,​ evaluate,​ and​ propose​ amicable resolution;</li>
-                    <li>If​ a​ resolution​ is​ still​ not​ met,​ the​ complaint​ will​ be​ moved​ to​ the second​
-                        resolution​ stage.</li>
-                </ul>
-                <h5>Within​ 2​ Business​ Days</h5>
-            </div>
-        </div>
-        <div class="sub-background-card">
-            <div>
-                <h5>Second-stage resolution</h5>
-                <ul>
-                    <li>The​ Unit​ to​ deep-dive​ into​ the​ root​ cause(s)​ and​ offer​ different solutions;</li>
-                    <li>If​ amicable​ resolution​ is​ still​ not​ achieved,​ the​ complaint​ will​ be escalated​ to​
-                        the​ Wing's​ Complaint​ Resolution​ Committee​ (CRC);</li>
-                    <li>CRC​ will​ run​ an​ investigation,​ analyze​ the​ facts,​ and​ make​ a​ final decision.</li>
-                </ul>
-                <h5>Within​ 28​ Business​ Days</h5>
-            </div>
-        </div>
-        <p>Every​ formal​ complaint​ submitted​ to​ the​ Complaint​ and​ Dispute​ Resolution​ Unit​ will​ follow​ the
-            procedures​ listed​ below:</p>
-        <ul>
-            <li>Acknowledge​ the​ complaint​ within​ the​ same​ business​ day;</li>
-            <li>Record​ lodged​ complaint​ status;</li>
-            <li>Advise​ the​ next​ steps​ to​ be​ taken;</li>
-            <li>Provide​ indicative​ timeline​ for​ resolution.</li>
-        </ul>
-        <h4>Helpful​ information​ to​ support​ your​ official​ complaint</h4>
-        <p>To​ make​ it​ easier​ to​ process​ your​ complaint,​ make​ sure​ you​ provide​ as​ much​ information​ as​
-            possible, such​ as:</p>
-        <ul>
-            <li>A​ description​ of​ the​ event;</li>
-            <li>The​ chronology​ of​ the​ event​ (date​ and​ time,​ if​ possible);</li>
-            <li>The​ name​ of​ the​ business​ line​ and​ employees​ you​ dealt​ with;</li>
-            <li>Any​ document​ relevant​ to​ the​ analysis​ of​ your​ complaint.</li>
-        </ul>
-    </div>
-</div></div></div></div></div></div><div class="space-bottom "></div></section>    <section id="section1" class="sec-pad null-bot jq-section">
-        <div class="layout-1 pb3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12">
-<h2 class="sec-title small">Examples​ of​ Complaints/Disputes</h2><p>Here​ are​ a​ few​ examples​ of​ complaints/disputes​ inspired​ by​ real​ cases,​ plus​ our​ solutions​ and​ helpful tips​ to​ prevent​ them​ from​ happening​ to​ you.</p><div class="faq-wrap"><ul></ul></div>                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="space-bottom"></div>
-    			<div class="responsive-block sp-sidebar">
-				<div class="container position-relative"><ul class="wpb_page_list page-sidebar"><li class="page_item page-item-42852"><a href="https://www.wingbank.com.kh/en/support/contact-center/">Contact Center</a></li>
-<li class="page_item page-item-52164"><a href="https://www.wingbank.com.kh/en/support/wing-chat/">Wing Chat</a></li>
-<li class="page_item page-item-42863"><a href="https://www.wingbank.com.kh/en/support/feedback/">Feedback</a></li>
-<li class="page_item page-item-42866 current_page_item"><a href="https://www.wingbank.com.kh/en/support/complaint/" aria-current="page">Complaint</a></li>
-<li class="page_item page-item-52783"><a href="https://www.wingbank.com.kh/en/support/card-security-awareness/">Card Security Awareness</a></li>
-</ul></div>				<div class="space-bottom "></div>
-			</div>
-		    </section>
-<div id="" class="popup-inline-content" style="display: none; max-width: 100%; margin: 0; padding: 0;">
-	<div class="fc-popup-content layout-1">
-		<div class="container">
-					</div>
-	</div>
-</div>
-
-
-</section>
-<footer>
-  <div class="container">
-    <div class="navbar-style">
-      <div class="row">
-        <div class="col-3">
-          <div class="img-foot">
-            <a href="#">
-              <img src="/img/header/wb-logo-foot.png" width="150px" height="60px" alt="">
-            </a>
-          </div>
-          <a href="#"><span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
-          <a href="#"><span class="icon"><i class="fa-brands fa-instagram"></i></span></a>
-          <a href="#"><span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
-          <a href="#"><span class="icon"><i class="fa-brands fa-youtube"></i></span></a>
-          <a href="#"><span class="icon"><i class="fa-brands fa-tiktok"></i></span></a>
-        </div>
-        <div class="col-9">
-          <ul class="d-flex flex-row justify-content-between navbar-nav text-white me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#">Disclaimer<span class="ms-2">|</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Terms of Use<span class="ms-2">|</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Cookies<span class="ms-2">|</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Privacy Policy<span class="ms-2">|</span></a> </li>
-            <li class="nav-item"><a class="nav-link" href="#">General Terms and Conditions</a></li>
-          </ul>
-          <div class="content text-center">
-            <p class=" p-0 m-0 text-white">
-              Wing Tower, Preah Monivong Blvd. corner Kampuchea Krom Blvd., Phum 6, Sangkat Monourom, Khan Prampir
-              Meakkakra, Phnom Penh.
-              <br> Swift code WIGCKHPP
+      <!-- Content -->
+ <!-- Banner Section -->
+  <div class="container overflow-hidden" style="padding-bottom: 6.4rem;">
+    <div class="row row1">
+      <div class="col-xl-6 ">
+        <section class="feedback-section">
+          <div class="feedback-content">
+            <h2>Your Feedback Helps Us Improve</h2>
+            <p>
+              Your feedback is a great way to let us know about our products and services. 
+              It helps us understand how you feel about us and gives us the opportunity to 
+              improve your experience. We welcome all feedback, whether it’s a question, a suggestion, 
+              or a compliment.
             </p>
-            <img class="mt-3" width="60px" src="../wing_app/img/header/certification_sisa.png" alt="">
           </div>
+        </section>
+      </div>
+      <div class="col-xl-6 ">
+        <section class="feedback-section">
+          <div class="feedback-image">
+            <img class="img-spp" src="https://paragon.com.vn/wp-content/uploads/2022/06/13.jpg" alt="Feedback Illustration">
+          </div>
+        </section>
+      </div>
+    </div>
+
+</div>
+  
+</section>
+
+<!-- Steps Section -->
+ <div class="container">
+<section class="steps">
+  <div class="row">
+    <div class="col-xl-6">
+      <div class="step">
+        <div class="step-content">
+          <img src="https://images.sftcdn.net/images/t_app-icon-m/p/010e35b8-1a17-4b8b-8976-675ea8ee94de/1148627718/freecall-logo" alt="Call Us">
+          <h2>Step 1: Reach Out</h2>
+          <p>Call us at <strong>+855 23 999 989</strong> or use our online chat for immediate support.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div class="step">
+        <div class="step-content">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqGqMYfn0dYVQPb-SrB98tZ3KbpNyI9ZmUfLJt3Q96DuGV4s_5yUUIFjXeqOH_9saqAlk&usqp=CAU" alt="Lodge Complaint">
+          <h2>Step 2: Submit a Complaint</h2>
+          <p>Fill out our <a href="#">complaint form</a> and provide detailed information.</p>
         </div>
       </div>
     </div>
   </div>
-  <hr>
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="content text-center">
-          <p class="text-white">© 2024 Wing Bank (Cambodia) Plc</p>
-        </div>
-      </div>
-    </div>
+</section>
+
+<!-- Modal for Complaint Form -->
+<div id="complaintModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h2>Complaint Form</h2>
+    <form action="#">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="complaint">Your Complaint:</label>
+      <textarea id="complaint" name="complaint" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
   </div>
-</footer>
+</div>
+</div>
+
+
+<!-- New FAQs Section -->
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+      <h3>What happens after I submit a complaint?</h3>
+      <p>Our team will investigate your complaint and respond within 3 business days.</p>
+  </div>
+  <div class="faq-item">
+      <h3>How can I track my complaint?</h3>
+      <p>You’ll receive a tracking number via email for status updates.</p>
+  </div>
+</section>
+
+      <footer>
+         <div class="container">
+            <div class="navbar-style">
+               <div class="row">
+                  <div class="col-3">
+                     <div class="img-foot">
+                        <a href="#">
+                        <img src="/img/header/wb-logo-foot.png" width="150px" height="60px" alt="">
+                        </a>
+                     </div>
+                     <a href="#"><span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
+                     <a href="#"><span class="icon"><i class="fa-brands fa-instagram"></i></span></a>
+                     <a href="#"><span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
+                     <a href="#"><span class="icon"><i class="fa-brands fa-youtube"></i></span></a>
+                     <a href="#"><span class="icon"><i class="fa-brands fa-tiktok"></i></span></a>
+                  </div>
+                  <div class="col-9">
+                     <ul class="d-flex flex-row justify-content-between navbar-nav text-white me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#">Disclaimer<span class="ms-2">|</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Terms of Use<span class="ms-2">|</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cookies<span class="ms-2">|</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Privacy Policy<span class="ms-2">|</span></a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#">General Terms and Conditions</a></li>
+                     </ul>
+                     <div class="content text-center">
+                        <p class=" p-0 m-0 text-white">
+                           Wing Tower, Preah Monivong Blvd. corner Kampuchea Krom Blvd., Phum 6, Sangkat Monourom, Khan Prampir
+                           Meakkakra, Phnom Penh.
+                           <br> Swift code WIGCKHPP
+                        </p>
+                        <img class="mt-3" width="60px" src="../wing_app/img/header/certification_sisa.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <hr>
+         <div class="container">
+            <div class="row">
+               <div class="col-12">
+                  <div class="content text-center">
+                     <p class="text-white">© 2024 Wing Bank (Cambodia) Plc</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="/js/support.js">
+
+      </script>
