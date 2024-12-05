@@ -1,5 +1,5 @@
 /* General Reset */
-body, h1, h2, h3, p, ul {
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -66,10 +66,10 @@ body {
     margin: auto;
   }
   .feedback-image .img-spp{
-    width: 70%;
+    width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 20px 0px;
+    border-radius: 40px 0px;
     margin-left: 3rem;
   }
   
@@ -156,80 +156,6 @@ body {
   .step a:hover {
     text-decoration: underline;
   }
-
-  /* Modal Styles */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  overflow: auto;
-  padding-top: 60px;
-}
-
-.modal-content {
-  background-color: #fff;
-  margin: 5% auto;
-  padding: 20px;
-  border-radius: 8px;
-  width: 80%;
-  max-width: 600px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.close-btn {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close-btn:hover,
-.close-btn:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-h2 {
-  color: #A9CB37;
-  text-align: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-label {
-  font-size: 1rem;
-  color: #555;
-}
-
-input, textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-
-button {
-  padding: 10px;
-  background-color: #A9CB37;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #8ab22c;
-}
-
   
   /* Fade-in animation */
   @keyframes fadeIn {
@@ -288,11 +214,61 @@ button:hover {
       font-size: 0.9rem;
     }
   }
-  
-/* Footer */
-.footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+ /* New FAQs */
+ .faq {
+ /* Light background */
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+
+}
+.faq h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.faq-question {
+  font-size: 20px;
+  color: #007bff;
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  color: #0056b3;
+}
+
+.faq-answer {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+  display: none; /* Hidden by default */
+}
+
+.faq-item.active .faq-answer {
+  display: block; /* Show on click */
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+     opacity: 0;
+     transform: translateY(-10px);
+  }
+  to {
+     opacity: 1;
+     transform: translateY(0);
+  }
 }

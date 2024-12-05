@@ -15,15 +15,84 @@
          />
       <link rel="stylesheet" href="/css/support.css">
 
-      <link rel="stylesheet" href="/css/style.css" />
    </head>
    <body>
+<style>
+      :root{
+    --hearder:#a9cf38;
+    --btn:#07f;
+    --btn-hover:rgb(5, 44, 201);
+    --fontsize-content:16px;
+    --font-icon:14px;
+    --text-black: black;
+}
+/* ------------- header-top-wing--------------------------*/
+.header-top-wing{
+    background-color: #a9cf38;
+    color: black;
+    height: 60px;
+}
+.header-top-wing .flag{
+    padding: 2px 5px;
+    border-radius: 3px;
+    /* background-color: white; */
+}
+.header-top-wing .flag img{
+    width: 20px !important;
+    
+}
+
+.header-top-wing .flag span{
+    color: var(--text-black);
+    
+}
+
+.header-top-wing .navbar-light{
+    margin-right: 100px !important;
+}
+.header-top-wing .btn-search{
+  
+    color: var(--text-black);
+    
+}
+    
+.header-top-wing .btn-inter {
+    background-color: var(--btn);
+    color: var(--text-white) !important;
+}
+.header-top-wing .btn-inter:hover {
+    background-color: var(--btn-hover);
+}
+.header-top-wing .nav-link{
+    color: black;
+}
+.header-top-wing .nav-link:hover{
+    color: black
+}
+/* ------------- search-------------- */
+
+ .navbar-brand img{
+    width: 170px !important;
+    height: 70px !important;
+}
+.navbar-tab .navbar-style{
+    width: 900px !important;
+     margin-left: 80px;
+}
+.navbar-tab .navbar-style .nav-link{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.dropdown-menu{
+    width: 100% !important;
+}
+</style>
     <header>
 
       <!-- ---------------- header-top-wing --------------------->
        
-      <div class="header-top-wing">
-        <nav class="navbar navbar-expand-lg w-50 navbar-dark float-end ">
+      <div class="header-top-wing ">
+        <nav class="navbar navbar-expand-lg w-50 navbar-light float-end ">
           <div class="container">
             <div class="navbar-style">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -157,12 +226,12 @@
                     Support
                   </a>
                   <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Feedback</a></li>
+                    <li><a class="dropdown-item" href="#">Contact</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href="#">Help</a></li>
                   </ul>
                 </li>
               </ul>
@@ -174,7 +243,7 @@
     </header>
       <!-- Content -->
  <!-- Banner Section -->
-  <div class="container overflow-hidden" style="padding-bottom: 6.4rem;">
+  <div class="container overflow-hidden">
     <div class="row row1">
       <div class="col-xl-6 ">
         <section class="feedback-section">
@@ -227,31 +296,9 @@
   </div>
 </section>
 
-<!-- Modal for Complaint Form -->
-<div id="complaintModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn" id="closeModal">&times;</span>
-    <h2>Complaint Form</h2>
-    <form action="#">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="complaint">Your Complaint:</label>
-      <textarea id="complaint" name="complaint" rows="4" required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</div>
-</div>
-
-
 <!-- New FAQs Section -->
 <section class="faq">
-  <h2>Frequently Asked Questions</h2>
+  <i><h2>Frequently Asked Questions</h2></i>
   <div class="faq-item">
       <h3>What happens after I submit a complaint?</h3>
       <p>Our team will investigate your complaint and respond within 3 business days.</p>
@@ -262,53 +309,7 @@
   </div>
 </section>
 
-      <footer>
-         <div class="container">
-            <div class="navbar-style">
-               <div class="row">
-                  <div class="col-3">
-                     <div class="img-foot">
-                        <a href="#">
-                        <img src="/img/header/wb-logo-foot.png" width="150px" height="60px" alt="">
-                        </a>
-                     </div>
-                     <a href="#"><span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
-                     <a href="#"><span class="icon"><i class="fa-brands fa-instagram"></i></span></a>
-                     <a href="#"><span class="icon"><i class="fa-brands fa-facebook"></i></span></a>
-                     <a href="#"><span class="icon"><i class="fa-brands fa-youtube"></i></span></a>
-                     <a href="#"><span class="icon"><i class="fa-brands fa-tiktok"></i></span></a>
-                  </div>
-                  <div class="col-9">
-                     <ul class="d-flex flex-row justify-content-between navbar-nav text-white me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Disclaimer<span class="ms-2">|</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Terms of Use<span class="ms-2">|</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Cookies<span class="ms-2">|</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Privacy Policy<span class="ms-2">|</span></a> </li>
-                        <li class="nav-item"><a class="nav-link" href="#">General Terms and Conditions</a></li>
-                     </ul>
-                     <div class="content text-center">
-                        <p class=" p-0 m-0 text-white">
-                           Wing Tower, Preah Monivong Blvd. corner Kampuchea Krom Blvd., Phum 6, Sangkat Monourom, Khan Prampir
-                           Meakkakra, Phnom Penh.
-                           <br> Swift code WIGCKHPP
-                        </p>
-                        <img class="mt-3" width="60px" src="../wing_app/img/header/certification_sisa.png" alt="">
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <hr>
-         <div class="container">
-            <div class="row">
-               <div class="col-12">
-                  <div class="content text-center">
-                     <p class="text-white">© 2024 Wing Bank (Cambodia) Plc</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
+
       <script src="/js/support.js">
 
       </script>
