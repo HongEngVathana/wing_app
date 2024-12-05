@@ -278,7 +278,7 @@
     <div class="col-xl-6">
       <div class="step">
         <div class="step-content">
-          <img src="https://images.sftcdn.net/images/t_app-icon-m/p/010e35b8-1a17-4b8b-8976-675ea8ee94de/1148627718/freecall-logo" alt="Call Us">
+          <img class="img-icon" src="https://images.sftcdn.net/images/t_app-icon-m/p/010e35b8-1a17-4b8b-8976-675ea8ee94de/1148627718/freecall-logo" alt="Call Us">
           <h2>Step 1: Reach Out</h2>
           <p>Call us at <strong>+855 23 999 989</strong> or use our online chat for immediate support.</p>
         </div>
@@ -287,12 +287,37 @@
     <div class="col-xl-6">
       <div class="step">
         <div class="step-content">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqGqMYfn0dYVQPb-SrB98tZ3KbpNyI9ZmUfLJt3Q96DuGV4s_5yUUIFjXeqOH_9saqAlk&usqp=CAU" alt="Lodge Complaint">
+          <img class="img-icon" src="/img/header/Message.png" 
+               alt="Lodge Complaint">
           <h2>Step 2: Submit a Complaint</h2>
-          <p>Fill out our <a href="#">complaint form</a> and provide detailed information.</p>
+          <p>
+            Fill out our <a href="#" id="openModal">complaint form</a> and provide detailed information.
+          </p>
         </div>
       </div>
     </div>
+    
+    <!-- Modal -->
+   <div id="complaintModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Complaint Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+      <label for="details">Details:</label>
+      <textarea id="details" name="details" placeholder="Provide detailed information about your complaint" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+    
   </div>
 </section>
 

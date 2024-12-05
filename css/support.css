@@ -93,42 +93,136 @@ body {
   
 
 /* Steps Section */
-
 .steps {
-    padding: 50px 10%;
-    /* background-color: #f9fafc; */
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .col {
-    flex: 1 1 calc(50% - 20px);
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .step {
-    background:none;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 50px 10%;
+  border-radius: 10px 0px;
+}
+.step > .step-content{
+padding: 20px;
+}
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000;
+    left: 0;
+    top: 0;
     width: 100%;
-    /* max-width: 400px; */
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
   }
   
+  /* General Modal Content Style */
+.modal-content {
+  background-color: #f4f4f9;
+  margin: 5% auto;
+  padding: 20px 30px;
+  border: none;
+  width: 40%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #555;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form textarea {
+  height: 100px;
+  resize: none;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.close {
+  color: #777;
+  font-size: 24px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff0000;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 80%; /* Adjust modal width for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 90%; /* Adjust modal width for mobile phones */
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 18px; /* Reduce font size for title */
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px; /* Smaller font size for input fields */
+  }
+
+  form button {
+    font-size: 14px; /* Smaller button text */
+    padding: 8px;
+  }
+
+  .close {
+    font-size: 20px; /* Adjust close button size */
+  }
+}
   .step:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 0px;
   }
   
   .step img {
-    width: 100px;
+    width: 50px;
     height: auto;
     margin-bottom: 15px;
     animation: fadeIn 1s ease-in-out;
@@ -154,7 +248,8 @@ body {
   }
   
   .step a:hover {
-    text-decoration: underline;
+    text-decoration: underline
+
   }
   
   /* Fade-in animation */

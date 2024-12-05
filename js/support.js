@@ -1,19 +1,18 @@
+const modal = document.getElementById('complaintModal');
+const openModalBtn = document.getElementById('openModal');
+const closeBtn = document.querySelector('.close');
 
+openModalBtn.onclick = function() {
+  modal.style.display = 'block';
+};
 
-const modal = document.getElementById("complaintModal");
-const openModal = document.getElementById("openModal");
-const closeModal = document.getElementById("closeModal");
-
-openModal.onclick = function() {
-  modal.style.display = "block";
-}
-
-closeModal.onclick = function() {
-  modal.style.display = "none";
-}
+closeBtn.onclick = function() {
+  modal.style.display = 'none';
+};
 
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
-}
+};
+
