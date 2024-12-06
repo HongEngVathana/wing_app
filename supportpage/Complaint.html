@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+         />
+      <link rel="stylesheet" href="/css/Complaint.css">
+
+   </head>
+   <body>
+<style>
+      :root{
+    --hearder:#a9cf38;
+    --btn:#07f;
+    --btn-hover:rgb(5, 44, 201);
+    --fontsize-content:16px;
+    --font-icon:14px;
+    --text-black: black;
+}
+/* ------------- header-top-wing--------------------------*/
+.header-top-wing{
+    background-color: #a9cf38;
+    color: black;
+    height: 60px;
+}
+.header-top-wing .flag{
+    padding: 2px 5px;
+    border-radius: 3px;
+    /* background-color: white; */
+}
+.header-top-wing .flag img{
+    width: 20px !important;
+    
+}
+
+.header-top-wing .flag span{
+    color: var(--text-black);
+    
+}
+
+.header-top-wing .navbar-light{
+    margin-right: 100px !important;
+}
+.header-top-wing .btn-search{
+  
+    color: var(--text-black);
+    
+}
+    
+.header-top-wing .btn-inter {
+    background-color: var(--btn);
+    color: var(--text-white) !important;
+}
+.header-top-wing .btn-inter:hover {
+    background-color: var(--btn-hover);
+}
+.header-top-wing .nav-link{
+    color: black;
+}
+.header-top-wing .nav-link:hover{
+    color: black
+}
+/* ------------- search-------------- */
+
+ .navbar-brand img{
+    width: 170px !important;
+    height: 70px !important;
+}
+.navbar-tab .navbar-style{
+    width: 900px !important;
+     margin-left: 80px;
+}
+.navbar-tab .navbar-style .nav-link{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.dropdown-menu{
+    width: 100% !important;
+}
+</style>
+    <header>
+
+      <!-- ---------------- header-top-wing --------------------->
+       
+      <div class="header-top-wing ">
+        <nav class="navbar navbar-expand-lg w-50 navbar-light float-end ">
+          <div class="container">
+            <div class="navbar-style">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarSupportedContent me-3">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Promotions
+  
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Careers
+  
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About
+  
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-4" href="#">CSR
+  
+                    </a>
+                  </li>
+                  <li class="nav-item me-2">
+                    <button class="btn btn-search btn-sm mt-2" type="submit"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link active" href="#">
+                      <div class="flag">
+                        <img src="/img/header/flag.png" alt="Cambodian flag"> <span>ខ្មែរ</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-inter btn-sm mt-2" type="submit">Internet Banking</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- ---------------navbar ------------->
+      <nav
+        class="navbar navbar-tab w-100 ps-5 pe-5 float-end navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+        <div class="container">
+          <div class="d-flex justify-content-center navbar-style  w-100">
+            <a class="navbar-brand w-75" href="#">
+              <img src="/img/header/cropped-wb-logo-head.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Personal 
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Business
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Wing Bank App
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Self Services
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+  
+                <li class="nav-item dropdown w-100">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Support
+                  </a>
+                  <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./Feedback.html">Feedback</a></li>
+                    <li><a class="dropdown-item" href="./Complaint.html">Complaint</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Help</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+  
+    </header>
+      <!-- Content -->
+      <div class="container overflow-hidden">
+        <div class="row row1">
+          <div class="col-xl-6 " style="z-index: 999;">
+            <img class="bg-cover" src="" alt="">
+            <section class="feedback-section">
+              <div class="feedback-content">
+                <h2>Your Complaint​ Resolution Help Us Improve</h2>
+                <p>
+                  Not​ fully​ satisfied​ with​ the​ service​ received​ or became a witness of an action that you think would violate laws and regulations?​ We​ are​ here​ to​ help.
+                </p>
+                <!-- <button id="openModal" class="btn btn-primary">Feedback</button> -->
+              </div>
+            </section>
+          </div>
+          <div class="col-xl-6 ">
+            <section class="feedback-section">
+              <div class="feedback-image">
+                <img class="img-spp" src="https://hrincjobs-pro.s3.amazonaws.com/media/public/filer_public/84/c1/84c12183-2704-4739-83aa-4b40aafa3625/wingggggggggg.jpg" alt="Feedback Illustration">
+              </div>
+            </section>
+          </div>
+        </div>
+    
+    </div>
+      <div class="container content mt-5">
+        <!-- Step 1 Section -->
+        <div class="row mb-4" style="border-bottom: 1px solid rgba(0, 0, 0, 0.114);">
+            <div class="col-md-4">
+                <h2 class="text-primary">Step 1</h2>
+            </div>
+            <div class="col-md-8">
+                <h5>Contact Customer Service</h5>
+                <p>If we didn't meet your expectations while serving you, please speak to our Customer Service Specialist through one of the following channels:</p>
+                <ul>
+                    <li>Call our hotline numbers: <strong>+855 23 999 989</strong></li>
+                    <li>Chat with us on our Facebook page</li>
+                </ul>
+                <p>Very often, the issue will be resolved quickly in Step 1.</p>
+                <p>If you are still dissatisfied, please proceed to Step 2.</p>
+            </div>
+        </div>
+
+        <!-- Step 2 Section -->
+        <div class="row mb-4" style="border-bottom: 1px solid rgba(0, 0, 0, 0.114);">
+            <div class="col-md-4">
+                <h2 class="text-primary">Step 2</h2>
+            </div>
+            <div class="col-md-8">
+                <h5>Lodge a Formal Complaint</h5>
+                <p>If your complaint has not been resolved by our Customer Service Specialist, you can submit a formal complaint to the Complaint and Dispute Resolution Unit.</p>
+                <p>
+                    Please complete the Complaint Acknowledgement Form and click <strong>Submit</strong>.
+                    Specialists from the Unit will be contacting you shortly.
+                </p>
+            </div>
+        </div>
+
+        <!-- Resolution Process Section -->
+        <div class="row mb-4" style="border-bottom: 1px solid rgba(0, 0, 0, 0.114);">
+            <div class="col-md-4">
+                <h2 class="text-primary">Resolution Process</h2>
+            </div>
+            <div class="col-md-8">
+                <h5>The 2-Stage Resolution Process</h5>
+                <ol>
+                    <li>
+                        <strong>First-stage resolution</strong>: The Unit will conduct fact findings, evaluate, and propose an amicable resolution.
+                        <br><em>Timeline: Within 2 Business Days</em>
+                    </li>
+                    <li>
+                        <strong>Second-stage resolution</strong>: The Unit will deep-dive into the root causes and offer different solutions. If no resolution is achieved, the complaint is escalated to the Complaint Resolution Committee (CRC).
+                        <br><em>Timeline: Within 28 Business Days</em>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Helpful Information Section -->
+        <div class="row" style="border-bottom: 1px solid rgba(0, 0, 0, 0.114);">
+            <div class="col-md-4">
+                <h2 class="text-primary">Helpful Information</h2>
+            </div>
+            <div class="col-md-8">
+                <h5>What to Include in Your Complaint</h5>
+                <ul>
+                    <li>A description of the event</li>
+                    <li>The chronology of the event (date and time, if possible)</li>
+                    <li>The name of the business line and employees you dealt with</li>
+                    <li>Any document relevant to the analysis of your complaint</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+ <!-- Banner Section -->
+
+
+
+
+      <script src="/js/support.js">
+
+      </script>

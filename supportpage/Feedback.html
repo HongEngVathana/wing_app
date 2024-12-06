@@ -226,12 +226,12 @@
                     Support
                   </a>
                   <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Feedback</a></li>
-                    <li><a class="dropdown-item" href="#">Contact</a></li>
+                    <li><a class="dropdown-item" href="./Feedback.html">Feedback</a></li>
+                    <li><a class="dropdown-item" href="./Complaint.html">Complaint</a></li>
                     <li>
                       <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Help</a></li>
+                    <li><a class="dropdown-item" href="./Help.html">Help</a></li>
                   </ul>
                 </li>
               </ul>
@@ -245,7 +245,8 @@
  <!-- Banner Section -->
   <div class="container overflow-hidden">
     <div class="row row1">
-      <div class="col-xl-6 ">
+      <div class="col-xl-6 " style="z-index: 999;">
+        <img class="bg-cover" src="" alt="">
         <section class="feedback-section">
           <div class="feedback-content">
             <h2>Your Feedback Helps Us Improve</h2>
@@ -255,6 +256,7 @@
               improve your experience. We welcome all feedback, whether it’s a question, a suggestion, 
               or a compliment.
             </p>
+            <button id="openModal" class="btn btn-primary">Feedback</button>
           </div>
         </section>
       </div>
@@ -278,7 +280,7 @@
     <div class="col-xl-6">
       <div class="step">
         <div class="step-content">
-          <img class="img-icon" src="https://images.sftcdn.net/images/t_app-icon-m/p/010e35b8-1a17-4b8b-8976-675ea8ee94de/1148627718/freecall-logo" alt="Call Us">
+          <img class="imgicon" src="https://images.sftcdn.net/images/t_app-icon-m/p/010e35b8-1a17-4b8b-8976-675ea8ee94de/1148627718/freecall-logo" alt="Call Us">
           <h2>Step 1: Reach Out</h2>
           <p>Call us at <strong>+855 23 999 989</strong> or use our online chat for immediate support.</p>
         </div>
@@ -287,15 +289,14 @@
     <div class="col-xl-6">
       <div class="step">
         <div class="step-content">
-          <img class="img-icon" src="/img/header/Message.png" 
-               alt="Lodge Complaint">
-          <h2>Step 2: Submit a Complaint</h2>
+          <img class="imgicon" src="/img/header/Message.png" alt="Lodge Feedback">
+          <h2>Step 2: Submit Feedback</h2>
           <p>
-            Fill out our <a href="#" id="openModal">complaint form</a> and provide detailed information.
+            Fill out our <a href="#">Feedback form</a> and provide detailed information.
           </p>
         </div>
       </div>
-    </div>
+    </div>    
     
     <!-- Modal -->
    <div id="complaintModal" class="modal">
@@ -310,7 +311,7 @@
       <input type="email" id="email" name="email" placeholder="Enter your email" required>
       
       <label for="details">Details:</label>
-      <textarea id="details" name="details" placeholder="Provide detailed information about your complaint" required></textarea>
+      <textarea id="details" name="details" placeholder="Provide detailed information about your Feedback" required></textarea>
       
       <button type="submit">Submit</button>
     </form>
@@ -322,17 +323,20 @@
 </section>
 
 <!-- New FAQs Section -->
-<section class="faq">
-  <i><h2>Frequently Asked Questions</h2></i>
-  <div class="faq-item">
-      <h3>What happens after I submit a complaint?</h3>
-      <p>Our team will investigate your complaint and respond within 3 business days.</p>
-  </div>
-  <div class="faq-item">
-      <h3>How can I track my complaint?</h3>
-      <p>You’ll receive a tracking number via email for status updates.</p>
-  </div>
-</section>
+ <div class="container-fluid bg-section">
+  <section class="faq">
+    <i><h2>Frequently Asked Questions</h2></i>
+    <div class="faq-item">
+        <h3>What happens after I submit a Feedback?</h3>
+        <p>Our team will investigate your Feedback and respond within 3 business days.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How can I track my Feedback?</h3>
+        <p>You’ll receive a tracking number via email for status updates.</p>
+    </div>
+  </section>
+ </div>
+
 
 
       <script src="/js/support.js">

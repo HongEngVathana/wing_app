@@ -33,6 +33,13 @@ body {
 }
 
 /* Banner Section */
+.bg-cover{
+  position: absolute;
+  z-index:1;
+  opacity: .09;
+  /* height: 300p; */
+  margin-left: 2rem;
+}
 .row1{
     position: relative;
     top: 4rem;
@@ -309,13 +316,16 @@ form button:hover {
       font-size: 0.9rem;
     }
   }
+
  /* New FAQs */
+ 
  .faq {
  /* Light background */
   padding: 40px;
   max-width: 800px;
   margin: 0 auto;
   border-radius: 10px;
+  /* background-color: red; */
 
 }
 .faq h2 {
